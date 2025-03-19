@@ -10,6 +10,7 @@ import 'package:joura_pothole/core/helpers/input_validators.dart';
 class CustomInputField extends StatelessWidget {
   CustomInputField({
     super.key,
+    required this.controller,
     this.isEmail = false,
     this.isPassword = false,
     this.title,
@@ -22,6 +23,7 @@ class CustomInputField extends StatelessWidget {
   final bool isPassword;
   final String? prefixIcon;
   final int maxLines;
+  final TextEditingController controller;
 
   // To track obscure and unobsure state of password text
   final RxBool isObscure = true.obs;
