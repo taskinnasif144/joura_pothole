@@ -6,6 +6,7 @@ class SvgIcons {
   static const String congratIcon = 'assets/svg_icons/congration icon.svg';
   static const String edit = 'assets/svg_icons/edit.svg';
   static const String eyeLine = 'assets/svg_icons/eye-line.svg';
+  static const String eyeLineClosed = 'assets/svg_icons/eye-line-close.svg';
   static const String facebook = 'assets/svg_icons/Facebook.svg';
   static const String frame5755 = 'assets/svg_icons/Frame 5755.svg';
   static const String frame1 = 'assets/svg_icons/Frame-1.svg';

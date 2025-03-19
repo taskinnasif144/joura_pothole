@@ -6,6 +6,7 @@ import 'package:joura_pothole/controller/auth_controller.dart';
 import 'package:joura_pothole/core/components/custom_button.dart';
 import 'package:joura_pothole/core/constants/app_fonts.dart';
 import 'package:joura_pothole/core/constants/auth_assets.dart';
+import 'package:joura_pothole/core/helpers/app_routes.dart';
 
 class OnBoardingScreen extends StatelessWidget {
   OnBoardingScreen({super.key});
@@ -76,6 +77,8 @@ class OnBoardingScreen extends StatelessWidget {
                             duration: Duration(milliseconds: 300),
                             curve: Curves.ease,
                           );
+                        } else {
+                          Get.offAllNamed(AppRoutes.signIn);
                         }
                       },
                     ),
