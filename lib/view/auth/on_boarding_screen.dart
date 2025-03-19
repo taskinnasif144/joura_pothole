@@ -26,15 +26,17 @@ class OnBoardingScreen extends StatelessWidget {
               scrollDirection: Axis.horizontal,
               children: [
                 // Individual Screen
-                _buildonBoariding(
+                _buildOnBoarding(
                   AuthAssets.onBoardingScreen3,
                   "Your Guide to Road Crack Management",
                 ),
-                _buildonBoariding(
+                // Individual Screen
+                _buildOnBoarding(
                   AuthAssets.onBoardingScreen2,
                   "Essential Training for Leak Detection & Control",
                 ),
-                _buildonBoariding(
+                // Individual Screen
+                _buildOnBoarding(
                   AuthAssets.onBoardingScreen1,
                   "Navigating the Manhole Problem",
                 ),
@@ -53,6 +55,7 @@ class OnBoardingScreen extends StatelessWidget {
                 child: Column(
                   children: [
                     DotsIndicator(
+                      // dots count == the number of individual screens
                       dotsCount: 3,
                       position: currentIndex.toDouble(),
                       decorator: DotsDecorator(
@@ -86,7 +89,7 @@ class OnBoardingScreen extends StatelessWidget {
     );
   }
 
-  SizedBox _buildonBoariding(image, title) {
+  SizedBox _buildOnBoarding(image, title) {
     return SizedBox.expand(
       child: Column(
         children: [
