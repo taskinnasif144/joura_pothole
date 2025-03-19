@@ -36,6 +36,7 @@ class SignInScreen extends StatelessWidget {
                     ),
                     SizedBox(height: 16.h),
                     CustomPhoneInputField(
+                      title: "Mobile",
                       controller: authController.phoneController,
                     ),
                     SizedBox(height: 16.h),
